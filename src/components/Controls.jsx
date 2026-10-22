@@ -358,15 +358,6 @@ export default function Controls({
               >
                 <option value="BRO.">BRO.</option>
                 <option value="SIS.">SIS.</option>
-                <option value="PST.">PST.</option>
-                <option value="EVANG.">EVANG.</option>
-                <option value="DCN.">DCN.</option>
-                <option value="DCNS.">DCNS.</option>
-                <option value="MIN.">MIN.</option>
-                <option value="ELDER">ELDER</option>
-                <option value="MR.">MR.</option>
-                <option value="MRS.">MRS.</option>
-                <option value="">NONE</option>
               </select>
 
               <input

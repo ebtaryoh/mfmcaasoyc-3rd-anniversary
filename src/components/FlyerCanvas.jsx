@@ -94,15 +94,15 @@ const FlyerCanvas = forwardRef(function FlyerCanvas(
         ctx.save();
         const fullName = `${attendeeTitle ? attendeeTitle + ' ' : ''}${attendeeName.trim().toUpperCase()}`;
 
-        // Badge position: right below the circle / above the banner (around y = 492)
-        const badgeY = 485 * scaleMult;
-        const fontSize = Math.round(15 * scaleMult);
+        // Badge position: moved up so it does NOT cover 'I WILL BE ATTENDING' banner (y = 438)
+        const badgeY = 438 * scaleMult;
+        const fontSize = Math.round(14 * scaleMult);
         ctx.font = `800 ${fontSize}px "Plus Jakarta Sans", -apple-system, sans-serif`;
         const textMetrics = ctx.measureText(fullName);
         const textWidth = textMetrics.width;
 
-        const padX = 20 * scaleMult;
-        const padY = 7 * scaleMult;
+        const padX = 18 * scaleMult;
+        const padY = 6 * scaleMult;
         const badgeW = textWidth + padX * 2;
         const badgeH = fontSize + padY * 2;
         const badgeX = cx - badgeW / 2;

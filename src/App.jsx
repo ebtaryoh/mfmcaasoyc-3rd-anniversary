@@ -72,6 +72,8 @@ export default function App() {
 
   // Sample attendee handler
   const handleSampleSelect = (url) => {
+    const isSister = url.includes('female');
+    setAttendeeTitle(isSister ? 'SIS.' : 'BRO.');
     const img = new Image();
     img.crossOrigin = 'anonymous';
     img.onload = () => {
