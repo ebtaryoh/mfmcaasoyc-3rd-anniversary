@@ -3,7 +3,6 @@ import confetti from 'canvas-confetti';
 import Header from './components/Header';
 import FlyerCanvas from './components/FlyerCanvas';
 import Controls from './components/Controls';
-import EventInfo from './components/EventInfo';
 import PreviewModal from './components/PreviewModal';
 import { Download, Share2 } from 'lucide-react';
 
@@ -216,10 +215,6 @@ export default function App() {
               if (fileInput) fileInput.click();
             }}
           />
-
-          <div style={{ marginTop: '20px' }}>
-            <EventInfo />
-          </div>
         </section>
 
         {/* Right Column: Controls & Actions */}
